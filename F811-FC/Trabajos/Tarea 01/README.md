@@ -1,5 +1,5 @@
 # Functors en Python
-1. Implementar por medio de functors o funciones una derivada numérica sobre un functor que represente polinomios:
+1. Implementar por medio de functors o funciones una [derivada numérica](Derivada.md) sobre un functor que represente polinomios:
     * Por medio de la definición de derivada.
     * Por medio de la fórmula de la diferencia de tres puntos centrales (**tree-point central difference formula**).
     * Por medio de la fórmula de la diferencia de tres puntos hacia adelante (**tree-point forward difference formula**).
