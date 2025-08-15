@@ -8,13 +8,15 @@ En este tipo de casos, se reemplaza el cálculo analítico por una fórmula de d
 
 ## Definición Fundamental
 Sea $f(x)$ una función suficientemente diferenciable. La derivada de la función en un punto $x$ está definido como:
-r'''
-$$
-\begin{aligned}
-    f'(x) & = \lim_{\Delta x\rightarrow0}\frac{f(x+\Delta x)-f(x)}{\Delta x}
-\end{aligned}
-$$
-'''
+
+```latex
+\begin{equation}
+    \begin{aligned}
+        f'(x) & = \lim_{\Delta x\rightarrow0}\frac{f(x+\Delta x)-f(x)}{\Delta x}
+    \end{aligned}
+\end{equation}
+```
+
 donde $\Delta x$ es un valor infinitesimal.
 
 ## Deducción General con Series de Taylor
@@ -120,7 +122,10 @@ $$
     f'(x) & = (a_{0}+a_{1}+a_{2})f(x) + (a_{1}+2a_{2})f'(x)\Delta x + \left(\frac{1}{2!}a_{1} + \frac{4}{2!}a_{2}\right)f''(x)(\Delta x)^{2} + \left(\frac{1}{3!}a_{1} + \frac{8}{3!}a_{2}\right)f'''(x)(\Delta x)^{3} + \mathscr{O}(\Delta x^{4})
 \end{aligned}
 $$
+
+
 y de esto se obtiene el siguiente sistema
+<!--
 $$
 \left.\begin{aligned}
     f(x):\hspace{5pt} 0 & = a_{0} + a_{1} + a_{2}
@@ -142,7 +147,10 @@ $$
     a_{2} & = -1/2
 \end{aligned}
 $$
+-->
+
 Por tanto, se tiene que
+<!--
 $$
 \left.\begin{aligned}
     f'(x) & \sim \frac{a_{0}f(x)+a_{1}f(x+\Delta x)+a_{2}f(x+2\Delta x)}{\Delta x}
@@ -152,7 +160,10 @@ $$
     f'(x) & \sim \frac{-3f(x)+4f(x+\Delta x)-f(x+2\Delta x)}{2\Delta x}
 \end{aligned}
 $$
+-->
+
 El orden del error, o término de truncamiento, dado por el término no cancelado de $f'''(x)$ es
+<!--
 $$
 \left.\begin{aligned}
     E(\Delta x) & = \left(\frac{1}{3!}a_{1} + \frac{8}{3!}a_{2}\right)f'''(x)(\Delta x)^{3}
@@ -166,6 +177,8 @@ $$
     E(\Delta x) & \sim -\frac{\Delta x^{2}}{3}f'''(\xi)
 \end{aligned}
 $$
+-->
+
 para algún $\xi\in[x,x+2\Delta x]$, de manera que la fórmula es de orden $\mathscr{O}(\Delta x^{2})$.
 
 # Métodos a Utilizar

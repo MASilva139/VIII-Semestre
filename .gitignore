@@ -10,3 +10,4 @@
 **/*.rar
 **/.venv/
 **/__pycache__/
+**/.build/*.bib
