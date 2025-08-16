@@ -15,7 +15,10 @@ jobs:
           node-version: "20"
 
       - name: Install dependencies
-        run: npm install @gitgraph/js
+        run: |
+            npm ci
+            npm install @gitgraph/js
+            npm install -g npm@latest  # Opcional: actualiza npm
 
       - name: Generate SVG
         run: |
