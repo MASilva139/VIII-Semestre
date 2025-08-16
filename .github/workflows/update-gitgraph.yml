@@ -16,7 +16,6 @@ jobs:
 
       - name: Install dependencies
         run: |
-            npm ci
             npm install @gitgraph/js
             npm install -g npm@latest  # Opcional: actualiza npm
 
@@ -27,11 +26,11 @@ jobs:
 
       - name: Update README
         run: |
-          SVG_CONTENT=$(cat gitgraph.svg)
+          SVG_CONTENT=$(cat assets/gitgraph.svg)
           sed -i "s|<!-- GITGRAPH -->|<!-- GITGRAPH -->\n${SVG_CONTENT}|g" README.md
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          git add README.md
+          git add README.md assets/gitgraph.svg
           git commit -m "Update GitGraph SVG"
           git push
         env:
