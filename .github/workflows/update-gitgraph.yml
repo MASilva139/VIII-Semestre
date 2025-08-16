@@ -19,8 +19,8 @@ jobs:
 
       - name: Generate SVG
         run: |
-          node count-branches.js > branch-data.json
-          node generate-gitgraph.js > gitgraph.svg
+          node scripts/count-branches.js > branch-data.json
+          node scripts/generate-gitgraph.js > gitgraph.svg
 
       - name: Update README
         run: |
