@@ -41,8 +41,3 @@
 * [**Códigos de Clase**](Códigos-c): En esta carpeta se tendrán los ejemplos de los códigos presentados en clase. 
 * [**Documentos de clase**](Notas): En esta carpeta estarán los contenidos dados en clase.
 * [**Proyectos/Tareas de clase**](Trabajos)
-
-## Historial de Commits
-<p align="center">
-    <img src="../assets/commit-graph-f811.svg" alt="Commit graph (F811 y Txx)" />
-</p>
