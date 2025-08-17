@@ -238,7 +238,7 @@ De lo anterior se tienen los siguientes metodos a emplear
 | 3 Puntos Central | $x-\Delta x$, $x$, $x+\Delta x$ | $\frac{f(x+\Delta x)-f(x-\Delta x)}{2\Delta x}$ | $\mathscr{O}(\Delta x^{2})$ |
 | 3 Puntos Adelante | $x$, $x+\Delta x$, $x+2\Delta x$ | $\frac{-3f(x) +4f(x+\Delta x)+-f(x+2\Delta x)}{2\Delta x}$ | $\mathscr{O}(\Delta x^{2})$ |
 
-[[Regresar](README.md)]
+[[Regresar](T01)]
 
 <!--
 Para exportar las páginas de un .pdf a .svg
