@@ -4,5 +4,7 @@ En el presente repositorio se trabajaran los proyectos/reportes de algunos curso
 * [**Laboratorio de Instrumentación**](F803-LI)
 * [**Física Computacional**](F811-FC)
 
-## Historial de Commits Dinámico
-<!-- GITGRAPH -->
+## Historial de Commits
+<p align="center">
+  <img src="assets/gitgraph.svg" alt="GitGraph" />
+</p>

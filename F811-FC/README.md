@@ -6,6 +6,11 @@
 | Alejandra Dessiré Zapeta Hernández | 202112959 |  |
 | Mario Armando Urbina Silva | 201906054 | [MASilva139](https://github.com/MASilva139) |
 
+# Carpetas del curso
+* [**Códigos de Clase**](Códigos-c): En esta carpeta se tendrán los ejemplos de los códigos presentados en clase. 
+* [**Documentos de clase**](Notas): En esta carpeta estarán los contenidos dados en clase.
+* [**Proyectos/Tareas de clase**](Trabajos)
+
 # Contenidos del Curso
 
 ## [Introducción]()
@@ -36,8 +41,3 @@
 * Métodos de Monte Carlo
 * Simulación de decaimiento radiactivo
 * Simulación de propiedades de transporte
-
-# Carpetas del curso
-* [**Códigos de Clase**](Códigos-c): En esta carpeta se tendrán los ejemplos de los códigos presentados en clase. 
-* [**Documentos de clase**](Notas): En esta carpeta estarán los contenidos dados en clase.
-* [**Proyectos/Tareas de clase**](Trabajos)
