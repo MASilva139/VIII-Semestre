@@ -10,3 +10,7 @@
     * Que el número de iteraciones exceda un valor máximo predefinido $n>n_{\mathrm{max}}$
 
 Debe de entregarse un archivo comprimido que contenga los archivos de código fuente en Python3. El código fuente debe incluir la implementación de los functors o funciones requeridos en esta tarea además de un código que realice el llamado a estas y que muestre claramente su funcionamiento.
+
+# Documentación del Trabajo
+
+* [Documentación](Doc/deriv_num.md) 
