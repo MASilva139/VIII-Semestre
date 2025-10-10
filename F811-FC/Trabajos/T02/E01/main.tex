@@ -1,0 +1,122 @@
+\documentclass{article}
+\usepackage[active,tightpage]{preview}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bm}
+\usepackage{bbm}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{breqn}
+
+\providecommand{\hs}[1]{\ensuremath{\hspace{#1 pt}}}
+\providecommand{\hsn}[1]{\ensuremath{\hspace{#1 pt}}}
+\providecommand{\vs}[1]{\ensuremath{\vspace{#1 pt}}}
+\providecommand{\unitvec}[1]{\boldsymbol{\hat{#1}}}
+\providecommand{\into}[2]{ \ensuremath{\oint_{#1}{#2}} }
+
+\providecommand{\linft}[2]{ \ensuremath{\lim_{#1\rightarrow\infty}\corch{#2}} }
+
+\providecommand{\parent}[1]{\ensuremath{\left(\hspace{2pt} #1 \hspace{2pt}\right)}}
+\providecommand{\corch}[1]{\ensuremath{\left[\hspace{2pt} #1 \hspace{2pt}\right]}}
+\providecommand{\llav}[1]{\ensuremath{\left\{\hspace{2pt} #1 \hspace{2pt}\right\}}}
+
+\providecommand{\dif}[2]{ \ensuremath{\frac{d #1}{d #2}} }
+\providecommand{\difn}[3]{ \ensuremath{\frac{d^{#3} #1}{d {#2}^{#3}}} }
+\providecommand{\parti}[2]{ \ensuremath{\frac{\partial #1}{\partial #2}} }
+\providecommand{\partin}[3]{ \ensuremath{\frac{{\partial}^{#3} #1}{{\partial} {#2}^{#3}}} }
+\providecommand{\bs}[1]{\ensuremath{\boldsymbol{#1}}}
+
+\providecommand{\pcruz}[2]{\ensuremath{ {#1}\times{#2} }}
+\providecommand{\ppunt}[2]{\ensuremath{ {#1}\cdot{#2} }}
+\providecommand{\bs}[1]{\ensuremath{ \boldsymbol{#1} }}
+
+\providecommand{\llint}[4]{\ensuremath{\int_{#1}^{#2}\left\{\hsn{2} #3 \hsn{2}\right\}\hsn{1}{d{#4}} }}
+\providecommand{\chint}[4]{\ensuremath{\int_{#1}^{#2}\left[\hsn{2} #3 \hsn{2}\right]\hsn{1}{d{#4}} }}
+\providecommand{\print}[4]{\ensuremath{\int_{#1}^{#2}\left(\hsn{2} #3 \hsn{2}\right)\hsn{1}{d{#4}}}}
+\providecommand{\clint}[3]{\ensuremath{\left[\hs{2} {#3} \hs{2}\right|_{#1}^{#2} }}
+\providecommand{\inte}[4]{\ensuremath{ \int_{#1}^{#2}{#3}\hsn{1}{d{#4}} }}
+\providecommand{\lne}[1]{\ensuremath{\ln{\left\{\hspace{1pt} #1 \hspace{1pt}\right\}}}}
+
+\providecommand{\cose}[1]{\ensuremath{\cos{\left[\hspace{2pt} #1 \hspace{2pt}\right]}}}
+\providecommand{\seno}[1]{\ensuremath{\sin{\left[\hspace{2pt} #1 \hspace{2pt}\right]}}}
+\providecommand{\tang}[1]{\ensuremath{\tan{\left[\hspace{2pt} #1 \hspace{2pt}\right]}}}
+\providecommand{\cota}[1]{\ensuremath{\cot{\left[\hspace{2pt} #1 \hspace{2pt}\right]}}}
+\providecommand{\seca}[1]{\ensuremath{\sec{\left[\hspace{2pt} #1 \hspace{2pt}\right]}}}
+\providecommand{\csec}[1]{\ensuremath{\csc{\left[\hspace{2pt} #1 \hspace{2pt}\right]}}}
+
+\providecommand{\cosen}[2]{\ensuremath{\cos^{#2}{\left[\hspace{2pt} #1 \hspace{2pt}\right]}}}
+\providecommand{\senon}[2]{\ensuremath{\sin^{#2}{\left[\hspace{2pt} #1 \hspace{2pt}\right]}}}
+\providecommand{\tangn}[2]{\ensuremath{\tan^{#2}{\left[\hspace{2pt} #1 \hspace{2pt}\right]}}}
+\providecommand{\cotan}[2]{\ensuremath{\cot^{#2}{\left[\hspace{2pt} #1 \hspace{2pt}\right]}}}
+\providecommand{\secan}[2]{\ensuremath{\sec^{#2}{\left[\hspace{2pt} #1 \hspace{2pt}\right]}}}
+\providecommand{\csecn}[2]{\ensuremath{\csc^{#2}{\left[\hspace{2pt} #1 \hspace{2pt}\right]}}}
+
+\providecommand{\acose}[1]{\ensuremath{\cos^{-1}{\left[\hspace{2pt} #1 \hspace{2pt}\right]}}}
+\providecommand{\aseno}[1]{\ensuremath{\sin^{-1}{\left[\hspace{2pt} #1 \hspace{2pt}\right]}}}
+\providecommand{\atang}[1]{\ensuremath{\tan^{-1}{\left[\hspace{2pt} #1 \hspace{2pt}\right]}}}
+\providecommand{\acota}[1]{\ensuremath{\cot^{-1}{\left[\hspace{2pt} #1 \hspace{2pt}\right]}}}
+\providecommand{\aseca}[1]{\ensuremath{\sec^{-1}{\left[\hspace{2pt} #1 \hspace{2pt}\right]}}}
+\providecommand{\acsec}[1]{\ensuremath{\csc^{-1}{\left[\hspace{2pt} #1 \hspace{2pt}\right]}}}
+
+\providecommand{\sumat}[3]{\ensuremath{\sum_{#1}^{#2}{\left\{\hspace{2pt} #3 \hspace{2pt}\right\}}}}
+\providecommand{\suma}[3]{\ensuremath{\sum_{#1}^{#2}{#3}}}
+\providecommand{\Rarr}[1]{\ensuremath{\hs{#1}\Longrightarrow\hs{#1}}}
+\providecommand{\rarr}[1]{\ensuremath{\hs{#1}\longrightarrow\hs{#1}}}
+\providecommand{\xrarr}[3]{\ensuremath{\hs{#3}\xrightarrow[#1]{#2}\hs{#3}}}
+
+\providecommand{\expo}[1]{\ensuremath{e^{#1}}}
+\providecommand{\uvec}[1]{\ensuremath{\hat{#1}}}
+%----------------------------------------------------------------------
+
+\PreviewEnvironment{equation*}  % Exporta TODAS las ecuaciones
+\setlength\PreviewBorder{2pt}
+
+\begin{document}
+Ecuación 1
+\begin{equation*}
+    \begin{aligned}
+        m_{i}\ddot{\pmb{r}}_{i} & = \pmb{F}_{i}\parent{\pmb{r}_{1}, \pmb{r}_{2}, \ldots, \pmb{r}_{N}}
+        \\
+        m_{i}\ddot{\pmb{r}}_{i} & = G\suma{j\neq i}{}{\frac{m_{i}m_{j}\parent{\pmb{r}_{j}-\pmb{r}_{i}}}{\parent{\|\pmb{r}_{j}-\pmb{r}_{i}\|^{2}+\epsilon^{2}}^{3/2}}}
+    \end{aligned}
+\end{equation*}
+Ecuación 2
+%\scriptsize
+\begin{equation*}
+    \begin{aligned}
+        \ddot{\pmb{r}}_{i}\parent{t^{n}} & \approx \frac{\pmb{r}_{i}^{n+1}-2\pmb{r}_{i}^{n}+\pmb{r}_{i}^{n-1}}{\Delta t^{2}}
+    \end{aligned}
+\end{equation*}
+%\normalsize
+Ecuación 3
+%\scriptsize
+\begin{equation*}
+    \begin{aligned}
+        \frac{\pmb{r}_{i}^{n+1}-2\pmb{r}_{i}^{n}+\pmb{r}_{i}^{n-1}}{\Delta t^{2}} & = \pmb{a}_{i}\parent{\pmb{r}^{n}}
+    \end{aligned}
+\end{equation*}
+%\normalsize
+Ecuación 4
+\begin{equation*}
+    \begin{aligned}
+        \pmb{r}_{i}^{n+1} & = 2\pmb{r}_{i}^{n} - \pmb{r}_{i}^{n-1} + \Delta t^{2}\pmb{a}_{i}\parent{\pmb{r}^{n}}
+    \end{aligned}
+\end{equation*}
+Ecuación 5
+%\small
+\begin{equation*}
+    \begin{aligned}
+        \pmb{r}_{i}^{1} & = \pmb{r}_{i}^{0} + \Delta t\pmb{v}_{i}^{0} + \frac{1}{2}\Delta t^{2}\pmb{a}_{i}\parent{\pmb{r}^{0}}
+    \end{aligned}
+\end{equation*}
+%\normalsize
+Ecuación 6
+%\tiny
+\begin{equation*}
+    \begin{aligned}
+        \pmb{v}_{i}^{n} & \approx \frac{\pmb{r}_{i}^{n+1}-\pmb{r}_{i}^{n-1}}{2\Delta t}
+    \end{aligned}
+\end{equation*}
+%\normalsize
+
+\end{document}
