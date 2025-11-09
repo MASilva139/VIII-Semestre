@@ -20,11 +20,11 @@ Se debe realizar lo siguiente:
     | Energía ($keV$) | Eficiencia | 
     |:---------------:|:----------:|
     |      200        |  0.03722   |
-    |      400        |  0.03722   |
-    |      600        |  0.03722   |
-    |     1000        |  0.03722   |
-    |     1200        |  0.03722   |
-    |     1400        |  0.03722   |
+    |      400        |  0.02078   |
+    |      600        |  0.01478   |
+    |     1000        |  0.01160   |
+    |     1200        |  0.00962   |
+    |     1400        |  0.00725   |
     
 
 3. Los detectores de radiación gamma no determinan la energía del fotón de manera exácta. El *proceso* tanto de interacción como de manejo de señal que lleva una detección produce mediciones que se distribuyen conforme a una distribución de Lorentz: $P(E;E_0,\Gamma)=\frac{1}{\pi}\frac{\Gamma}{(E-E_0)^2+\Gamma^2}$ donde $E_0$ es la energía esperada del fotón a medir y $\Gamma$ es la *resolución* del detector en esta energía. Suponer que la fuente de la figura 1 es de $^{137}Cs$ con una actividad de $A=300 [kBq]$. El $^{137}Cs$ emite un fotón gamma característico con una energía de $662[keV]$. Asumiendo que la resolución del detector esta energía es de $10[keV]$ y tomando en cuenta la eficiencia total (ecuación 3), obtener el espectro (histograma) esperado de salida del detector para una medición de 5 minutos por medio de una simulación de montecarlo.
