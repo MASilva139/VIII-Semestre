@@ -1,0 +1,164 @@
+\documentclass{article}
+\usepackage[active,tightpage]{preview}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bm}
+\usepackage{bbm}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{breqn}
+
+\PreviewEnvironment{equation*}  % Exporta TODAS las ecuaciones
+\setlength\PreviewBorder{2pt}
+
+\begin{document}
+Ecuación 1
+\begin{equation*}
+    \begin{aligned}
+        f'(x) &= \lim_{\Delta x\rightarrow0}\frac{f(x+\Delta x)-f(x)}{\Delta x}
+    \end{aligned}
+\end{equation*}
+Ecuación 2
+\scriptsize
+\begin{equation*}
+    \begin{aligned}
+        f(x\pm k\cdot\Delta x) & = \sum^{\infty}_{n=0}\frac{1}{n!}\frac{d^{n}f(x)}{dx^{n}}\left(\pm k\cdot\Delta x\right)^{n}
+        \\
+        f(x\pm k\cdot\Delta x) & = f(x) + \frac{df(x)}{dx}\left(\pm k\cdot\Delta x\right) + \frac{1}{2!}\frac{d^{2}f(x)}{dx^{2}}\left(\pm k\cdot\Delta x\right)^{2} + \cdots + \frac{1}{n!}\frac{d^{n}f(x)}{dx^{n}}\left(\pm k\cdot\Delta x\right)^{n}
+        \\
+        f(x\pm k\cdot\Delta x) & = f(x) + f'(x)\left(\pm k\cdot\Delta x\right) + \frac{1}{2!}f''(x)\left(\pm k\cdot\Delta x\right)^{2} + \cdots + \frac{1}{n!}f^{(n)}(x)\left(\pm k\cdot\Delta x\right)^{n}
+    \end{aligned}
+\end{equation*}
+\normalsize
+Ecuación 3
+\scriptsize
+\begin{equation*}
+    \begin{aligned}
+        f(x\pm k\cdot\Delta x) & = f(x) + f'(x)\left(\pm k\cdot\Delta x\right) + \frac{1}{2!}f''(x)\left(\pm k\cdot\Delta x\right)^{2} + \cdots + \frac{1}{n!}f^{(n)}(x)\left(\pm k\cdot\Delta x\right)^{n}
+    \end{aligned}
+\end{equation*}
+\normalsize
+Ecuación 4
+\begin{equation*}
+    \begin{aligned}
+        f(x+\Delta x) & = f(x) + f'(x)\Delta x + \frac{1}{2!}f''(x)\left(\Delta x\right)^{2} + \cdots + \frac{1}{n!}f^{(n)}(x)\left(\Delta x\right)^{n}
+        \\
+        f'(x) & = \frac{f(x+\Delta x)-f(x)}{\Delta x} - \frac{1}{2!}f''(x)\left(\Delta x\right) - \cdots - \frac{1}{n!}f^{(n)}(x)\left(\Delta x\right)^{n-1}
+    \end{aligned}
+\end{equation*}
+Ecuación 5
+\small
+\begin{equation*}
+    \begin{aligned}
+        f(x-\Delta x) & = f(x) + f'(x)\left(-\Delta x\right) + \frac{1}{2!}f''(x)\left(-\Delta x\right)^{2} + \cdots + \frac{1}{n!}f^{(n)}(x)\left(-\Delta x\right)^{n}
+        \\
+        f(x-\Delta x) & = f(x) - f'(x)\Delta x + \frac{1}{2!}f''(x)\left(\Delta x\right)^{2} + \cdots + \frac{1}{n!}f^{(n)}(x)\left(-\Delta x\right)^{n}
+        \\
+        f'(x) & = \frac{f(x)-f(x-\Delta x)}{\Delta x} + \frac{1}{2!}f''(x)\left(\Delta x\right) - \cdots - \frac{(-1)^{n-1}}{n!}f^{(n)}(x)\left(\Delta x\right)^{n-1}
+    \end{aligned}
+\end{equation*}
+\normalsize
+Ecuación 6
+\tiny
+\begin{equation*}
+    \begin{aligned}
+        f'(x) & = \frac{f(x+\Delta x)-f(x)}{\Delta x} - \frac{1}{2!}f''(x)\left(\Delta x\right) - \frac{1}{3!}f'''(x)(\Delta x)^{2} - \cdots - \frac{1}{n!}f^{(n)}(x)\left(\Delta x\right)^{n-1}
+        \\
+        f'(x) & = \frac{f(x)-f(x-\Delta x)}{\Delta x} + \frac{1}{2!}f''(x)\left(\Delta x\right) - \frac{1}{3!}f'''(x)(\Delta x)^{2} - \cdots - \frac{(-1)^{n-1}}{n!}f^{(n)}(x)\left(\Delta x\right)^{n-1}
+        \\\\\hline\\
+        2f'(x) & = \frac{f(x+\Delta x)-f(x)}{\Delta x} + \frac{f(x)-f(x-\Delta x)}{\Delta x} - \frac{2}{3!}f'''(x)(\Delta x)^{2} - \cdots - \frac{1}{n!}\left[1+(-1)^{n-1}\right]f^{(n)}(x)(-\Delta x)^{n-1}
+        \\
+        f'(x) & = \frac{f(x+\Delta x)-f(x-\Delta x)}{2\Delta x}  - \frac{1}{3!}f'''(x)(\Delta x)^{2} - \cdots - \frac{1}{2n!}\left[1+(-1)^{n-1}\right]f^{(n)}(x)(-\Delta x)^{n-1}
+    \end{aligned}
+\end{equation*}
+\normalsize
+Ecuación 7
+\begin{equation*}
+    \begin{aligned}
+        f'(x) & \sim \frac{f(x+\Delta x)-f(x-\Delta x)}{2\Delta x}
+    \end{aligned}
+\end{equation*}
+Ecuación 8
+\begin{equation*}
+    \begin{aligned}
+        f(x+\Delta x) & = f(x) + f'(x)\Delta x + \frac{1}{2!}f''(x)\left(\Delta x\right)^{2} + \cdots + \frac{1}{n!}f^{(n)}(x)\left(\Delta x\right)^{n}
+    \end{aligned}
+\end{equation*}
+Ecuación 9
+\begin{equation*}
+    \begin{aligned}
+        f(x+2\Delta x) & = f(x) + 2f'(x)\Delta x + \frac{1}{2!}f''(x)\left(2\Delta x\right)^{2} + \cdots + \frac{1}{n!}f^{(n)}(x)\left(2\Delta x\right)^{n}
+        \\
+        f(x+2\Delta x) & = f(x) + 2f'(x)\Delta x + \frac{4}{2!}f''(x)\left(\Delta x\right)^{2} + \cdots + \frac{2^{n}}{n!}f^{(n)}(x)\left(\Delta x\right)^{n}
+    \end{aligned}
+\end{equation*}
+Ecuación 10
+\begin{equation*}
+    \begin{aligned}
+        f'(x) & \sim \frac{a_{0}f(x)+a_{1}f(x+\Delta x)+a_{2}f(x+2\Delta x)}{\Delta x}
+    \end{aligned}
+\end{equation*}
+Ecuación 11
+\tiny
+\begin{equation*}
+    \begin{aligned}
+        f'(x) & = a_{0}\left[f(x)\right] + a_{1}\left[f(x) + f'(x)\Delta x + \frac{1}{2!}f''(x)\left(\Delta x\right)^{2} + \frac{1}{3!}f'''(x)\left(\Delta x\right)^{3} + \cdots + \frac{1}{n!}f^{(n)}(x)\left(\Delta x\right)^{n}\right] + 
+        \\ & \hspace{10pt} a_{2}\left[f(x) + 2f'(x)\Delta x + \frac{4}{2!}f''(x)\left(\Delta x\right)^{2} + \frac{8}{3!}f'''(x)\left(\Delta x\right)^{3} + \cdots + \frac{2^{n}}{n!}f^{(n)}(x)\left(\Delta x\right)^{n}\right]
+        \\
+        f'(x) & = (a_{0}+a_{1}+a_{2})f(x) + (a_{1}+2a_{2})f'(x)\Delta x + \left(\frac{1}{2!}a_{1} + \frac{4}{2!}a_{2}\right)f''(x)(\Delta x)^{2} + \left(\frac{1}{3!}a_{1} + \frac{8}{3!}a_{2}\right)f'''(x)(\Delta x)^{3} 
+        \\ & \hspace{10pt} + \mathscr{O}(\Delta x^{4})
+    \end{aligned}
+\end{equation*}
+\normalsize
+Ecuación 12
+\begin{equation*}
+    \left.\begin{aligned}
+        f(x):\hspace{5pt} 0 & = a_{0} + a_{1} + a_{2}
+        \\
+        f'(x):\hspace{5pt} 1 & = a_{1} + 2a_{2}
+        \\
+        f''(x):\hspace{5pt} 0 & = \frac{1}{2}a_{1} + 2a_{2}
+    \end{aligned}\hspace{10pt}\right\}\hspace{10pt}\left.\begin{aligned}
+        a_{0} & = -(a_{1}+a_{2})
+        \\
+        1 & = a_{1} + 2a_{2}
+        \\
+        a_{1} & = -4a_{2}
+    \end{aligned}\hspace{10pt}\right\}\hspace{10pt}\begin{aligned}
+        a_{0} & = -3/2
+        \\
+        a_{1} & = 2
+        \\
+        a_{2} & = -1/2
+    \end{aligned}
+\end{equation*}
+Ecuación 13
+\tiny
+\begin{equation*}
+    \left.\begin{aligned}
+        f'(x) & \sim \frac{a_{0}f(x)+a_{1}f(x+\Delta x)+a_{2}f(x+2\Delta x)}{\Delta x}
+        \\
+        f'(x) & \sim \frac{-\frac{3}{2}f(x)+2f(x+\Delta x)-\frac{1}{2}f(x+2\Delta x)}{\Delta x}
+    \end{aligned}\hspace{5pt}\right\}\hspace{5pt}\begin{aligned}
+        f'(x) & \sim \frac{-3f(x)+4f(x+\Delta x)-f(x+2\Delta x)}{2\Delta x}
+    \end{aligned}
+\end{equation*}
+\normalsize
+Ecuación 14
+\tiny
+\begin{equation*}
+    \left.\begin{aligned}
+        E(\Delta x) & = \left(\frac{1}{3!}a_{1} + \frac{8}{3!}a_{2}\right)f'''(x)(\Delta x)^{3}
+        \\
+        E(\Delta x) & = \left(\frac{1}{3!}[2] + \frac{8}{3!}\left[-\frac{1}{2}\right]\right)f'''(x)(\Delta x)^{3}
+    \end{aligned}\hspace{5pt}\right\}\hspace{5pt}\left.\begin{aligned}
+        E(\Delta x) & = \left(\frac{1}{3} - \frac{2}{3}\right)f'''(x)(\Delta x)^{3}
+        \\
+        E(\Delta x) & = -\frac{1}{3}f'''(x)(\Delta x)^{3}
+    \end{aligned}\hspace{5pt}\right\}\hspace{5pt}\begin{aligned}
+        E(\Delta x) & \sim -\frac{\Delta x^{2}}{3}f'''(\xi)
+    \end{aligned}
+\end{equation*}
+\normalsize
+
+\end{document}
